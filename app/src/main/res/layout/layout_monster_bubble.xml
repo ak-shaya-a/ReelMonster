@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tv_speech_bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E0F7FA"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="4dp"
+        android:text="Tap me +1"
+        android:textColor="#006064"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:elevation="4dp"
+        android:layout_marginBottom="4dp" />
+
+    <FrameLayout
+        android:id="@+id/monster_bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true">
+
+        <View
+            android:id="@+id/monster_face"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_monster_circle" />
+
+        <TextView
+            android:id="@+id/tv_badge_count"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/bg_badge_circle"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+</LinearLayout>
